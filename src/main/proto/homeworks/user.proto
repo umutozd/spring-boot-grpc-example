@@ -1,0 +1,29 @@
+syntax = "proto3";
+package homeworks;
+
+option java_multiple_files = true;
+option java_package = "proto.homeworks";
+option java_outer_classname = "UserProto";
+
+message User {
+  string id = 1;
+  string email = 2;
+  string name = 3;
+}
+
+message CreateUserReq {
+  string email = 1;
+  string name = 2;
+}
+
+// At least one of id and email must be non-empty.
+message GetUserReq {
+  string id = 1;
+  string email = 2;
+}
+
+service UsersService {
+  rpc CreateUser (CreateUserReq) returns (User);
+  rpc GetUser (GetUserReq) returns (User);
+}
+

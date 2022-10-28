@@ -1,0 +1,55 @@
+syntax = "proto3";
+package homeworks;
+
+option java_multiple_files = true;
+option java_package = "proto.homeworks";
+option java_outer_classname = "HomeworkProto";
+
+import "user.proto";
+
+// Homework contains questions and answers. The number of questions must
+// be equal to the number of answers at all times.
+message Homework {
+  // The unique id of this Homework
+  string id = 1;
+  // The id of the user that this Homework is assigned to. Cannot be empty.
+  string assigned_to = 2;
+  repeated Question questions = 3;
+  repeated Answer answers = 4;
+  bool completed = 5;
+}
+
+message Question {
+  string text = 1;
+}
+
+message Answer {
+  string text = 2;
+}
+
+message AssignHomeworkReq {
+  string assign_to = 1;
+  repeated Question questions = 2;
+}
+
+message DoHomeworkReq {
+  // The id of the Homework to be done
+  string homework_id = 1;
+  // The id of the User that does the Homework
+  string user_id = 2;
+  // All the answers to the Homework. The number of answers must be equal to the
+  // number of questions. Answer texts may be empty.
+  repeated Answer answers = 3;
+  // Whether this Homework is completed or not
+  bool completed = 4;
+}
+
+message UserAndHomework {
+  User user = 1;
+  Homework homework = 2;
+}
+
+service HomeworkService {
+  rpc AssignHomework (AssignHomeworkReq) returns (Homework);
+  rpc DoHomework (DoHomeworkReq) returns (Homework);
+}
