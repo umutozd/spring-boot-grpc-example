@@ -1,4 +1,4 @@
-package proto.homeworks;
+package com.umutozd.proto.homeworks;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
@@ -15,29 +15,29 @@ public final class UsersServiceGrpc {
   public static final String SERVICE_NAME = "homeworks.UsersService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<proto.homeworks.CreateUserReq,
-      proto.homeworks.User> getCreateUserMethod;
+  private static volatile io.grpc.MethodDescriptor<com.umutozd.proto.homeworks.CreateUserReq,
+      com.umutozd.proto.homeworks.User> getCreateUserMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "CreateUser",
-      requestType = proto.homeworks.CreateUserReq.class,
-      responseType = proto.homeworks.User.class,
+      requestType = com.umutozd.proto.homeworks.CreateUserReq.class,
+      responseType = com.umutozd.proto.homeworks.User.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<proto.homeworks.CreateUserReq,
-      proto.homeworks.User> getCreateUserMethod() {
-    io.grpc.MethodDescriptor<proto.homeworks.CreateUserReq, proto.homeworks.User> getCreateUserMethod;
+  public static io.grpc.MethodDescriptor<com.umutozd.proto.homeworks.CreateUserReq,
+      com.umutozd.proto.homeworks.User> getCreateUserMethod() {
+    io.grpc.MethodDescriptor<com.umutozd.proto.homeworks.CreateUserReq, com.umutozd.proto.homeworks.User> getCreateUserMethod;
     if ((getCreateUserMethod = UsersServiceGrpc.getCreateUserMethod) == null) {
       synchronized (UsersServiceGrpc.class) {
         if ((getCreateUserMethod = UsersServiceGrpc.getCreateUserMethod) == null) {
           UsersServiceGrpc.getCreateUserMethod = getCreateUserMethod =
-              io.grpc.MethodDescriptor.<proto.homeworks.CreateUserReq, proto.homeworks.User>newBuilder()
+              io.grpc.MethodDescriptor.<com.umutozd.proto.homeworks.CreateUserReq, com.umutozd.proto.homeworks.User>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "CreateUser"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  proto.homeworks.CreateUserReq.getDefaultInstance()))
+                  com.umutozd.proto.homeworks.CreateUserReq.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  proto.homeworks.User.getDefaultInstance()))
+                  com.umutozd.proto.homeworks.User.getDefaultInstance()))
               .build();
         }
       }
@@ -45,29 +45,29 @@ public final class UsersServiceGrpc {
     return getCreateUserMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<proto.homeworks.GetUserReq,
-      proto.homeworks.User> getGetUserMethod;
+  private static volatile io.grpc.MethodDescriptor<com.umutozd.proto.homeworks.GetUserReq,
+      com.umutozd.proto.homeworks.User> getGetUserMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetUser",
-      requestType = proto.homeworks.GetUserReq.class,
-      responseType = proto.homeworks.User.class,
+      requestType = com.umutozd.proto.homeworks.GetUserReq.class,
+      responseType = com.umutozd.proto.homeworks.User.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<proto.homeworks.GetUserReq,
-      proto.homeworks.User> getGetUserMethod() {
-    io.grpc.MethodDescriptor<proto.homeworks.GetUserReq, proto.homeworks.User> getGetUserMethod;
+  public static io.grpc.MethodDescriptor<com.umutozd.proto.homeworks.GetUserReq,
+      com.umutozd.proto.homeworks.User> getGetUserMethod() {
+    io.grpc.MethodDescriptor<com.umutozd.proto.homeworks.GetUserReq, com.umutozd.proto.homeworks.User> getGetUserMethod;
     if ((getGetUserMethod = UsersServiceGrpc.getGetUserMethod) == null) {
       synchronized (UsersServiceGrpc.class) {
         if ((getGetUserMethod = UsersServiceGrpc.getGetUserMethod) == null) {
           UsersServiceGrpc.getGetUserMethod = getGetUserMethod =
-              io.grpc.MethodDescriptor.<proto.homeworks.GetUserReq, proto.homeworks.User>newBuilder()
+              io.grpc.MethodDescriptor.<com.umutozd.proto.homeworks.GetUserReq, com.umutozd.proto.homeworks.User>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetUser"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  proto.homeworks.GetUserReq.getDefaultInstance()))
+                  com.umutozd.proto.homeworks.GetUserReq.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  proto.homeworks.User.getDefaultInstance()))
+                  com.umutozd.proto.homeworks.User.getDefaultInstance()))
               .build();
         }
       }
@@ -125,15 +125,15 @@ public final class UsersServiceGrpc {
 
     /**
      */
-    public void createUser(proto.homeworks.CreateUserReq request,
-        io.grpc.stub.StreamObserver<proto.homeworks.User> responseObserver) {
+    public void createUser(com.umutozd.proto.homeworks.CreateUserReq request,
+        io.grpc.stub.StreamObserver<com.umutozd.proto.homeworks.User> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCreateUserMethod(), responseObserver);
     }
 
     /**
      */
-    public void getUser(proto.homeworks.GetUserReq request,
-        io.grpc.stub.StreamObserver<proto.homeworks.User> responseObserver) {
+    public void getUser(com.umutozd.proto.homeworks.GetUserReq request,
+        io.grpc.stub.StreamObserver<com.umutozd.proto.homeworks.User> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetUserMethod(), responseObserver);
     }
 
@@ -143,15 +143,15 @@ public final class UsersServiceGrpc {
             getCreateUserMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                proto.homeworks.CreateUserReq,
-                proto.homeworks.User>(
+                com.umutozd.proto.homeworks.CreateUserReq,
+                com.umutozd.proto.homeworks.User>(
                   this, METHODID_CREATE_USER)))
           .addMethod(
             getGetUserMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                proto.homeworks.GetUserReq,
-                proto.homeworks.User>(
+                com.umutozd.proto.homeworks.GetUserReq,
+                com.umutozd.proto.homeworks.User>(
                   this, METHODID_GET_USER)))
           .build();
     }
@@ -173,16 +173,16 @@ public final class UsersServiceGrpc {
 
     /**
      */
-    public void createUser(proto.homeworks.CreateUserReq request,
-        io.grpc.stub.StreamObserver<proto.homeworks.User> responseObserver) {
+    public void createUser(com.umutozd.proto.homeworks.CreateUserReq request,
+        io.grpc.stub.StreamObserver<com.umutozd.proto.homeworks.User> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getCreateUserMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getUser(proto.homeworks.GetUserReq request,
-        io.grpc.stub.StreamObserver<proto.homeworks.User> responseObserver) {
+    public void getUser(com.umutozd.proto.homeworks.GetUserReq request,
+        io.grpc.stub.StreamObserver<com.umutozd.proto.homeworks.User> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetUserMethod(), getCallOptions()), request, responseObserver);
     }
@@ -204,14 +204,14 @@ public final class UsersServiceGrpc {
 
     /**
      */
-    public proto.homeworks.User createUser(proto.homeworks.CreateUserReq request) {
+    public com.umutozd.proto.homeworks.User createUser(com.umutozd.proto.homeworks.CreateUserReq request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getCreateUserMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public proto.homeworks.User getUser(proto.homeworks.GetUserReq request) {
+    public com.umutozd.proto.homeworks.User getUser(com.umutozd.proto.homeworks.GetUserReq request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetUserMethod(), getCallOptions(), request);
     }
@@ -233,16 +233,16 @@ public final class UsersServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<proto.homeworks.User> createUser(
-        proto.homeworks.CreateUserReq request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.umutozd.proto.homeworks.User> createUser(
+        com.umutozd.proto.homeworks.CreateUserReq request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getCreateUserMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<proto.homeworks.User> getUser(
-        proto.homeworks.GetUserReq request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.umutozd.proto.homeworks.User> getUser(
+        com.umutozd.proto.homeworks.GetUserReq request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetUserMethod(), getCallOptions()), request);
     }
@@ -269,12 +269,12 @@ public final class UsersServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_CREATE_USER:
-          serviceImpl.createUser((proto.homeworks.CreateUserReq) request,
-              (io.grpc.stub.StreamObserver<proto.homeworks.User>) responseObserver);
+          serviceImpl.createUser((com.umutozd.proto.homeworks.CreateUserReq) request,
+              (io.grpc.stub.StreamObserver<com.umutozd.proto.homeworks.User>) responseObserver);
           break;
         case METHODID_GET_USER:
-          serviceImpl.getUser((proto.homeworks.GetUserReq) request,
-              (io.grpc.stub.StreamObserver<proto.homeworks.User>) responseObserver);
+          serviceImpl.getUser((com.umutozd.proto.homeworks.GetUserReq) request,
+              (io.grpc.stub.StreamObserver<com.umutozd.proto.homeworks.User>) responseObserver);
           break;
         default:
           throw new AssertionError();

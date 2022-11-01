@@ -1,4 +1,4 @@
-package proto.homeworks;
+package com.umutozd.proto.homeworks;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
@@ -15,29 +15,29 @@ public final class HomeworkServiceGrpc {
   public static final String SERVICE_NAME = "homeworks.HomeworkService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<proto.homeworks.AssignHomeworkReq,
-      proto.homeworks.Homework> getAssignHomeworkMethod;
+  private static volatile io.grpc.MethodDescriptor<com.umutozd.proto.homeworks.AssignHomeworkReq,
+      com.umutozd.proto.homeworks.Homework> getAssignHomeworkMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "AssignHomework",
-      requestType = proto.homeworks.AssignHomeworkReq.class,
-      responseType = proto.homeworks.Homework.class,
+      requestType = com.umutozd.proto.homeworks.AssignHomeworkReq.class,
+      responseType = com.umutozd.proto.homeworks.Homework.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<proto.homeworks.AssignHomeworkReq,
-      proto.homeworks.Homework> getAssignHomeworkMethod() {
-    io.grpc.MethodDescriptor<proto.homeworks.AssignHomeworkReq, proto.homeworks.Homework> getAssignHomeworkMethod;
+  public static io.grpc.MethodDescriptor<com.umutozd.proto.homeworks.AssignHomeworkReq,
+      com.umutozd.proto.homeworks.Homework> getAssignHomeworkMethod() {
+    io.grpc.MethodDescriptor<com.umutozd.proto.homeworks.AssignHomeworkReq, com.umutozd.proto.homeworks.Homework> getAssignHomeworkMethod;
     if ((getAssignHomeworkMethod = HomeworkServiceGrpc.getAssignHomeworkMethod) == null) {
       synchronized (HomeworkServiceGrpc.class) {
         if ((getAssignHomeworkMethod = HomeworkServiceGrpc.getAssignHomeworkMethod) == null) {
           HomeworkServiceGrpc.getAssignHomeworkMethod = getAssignHomeworkMethod =
-              io.grpc.MethodDescriptor.<proto.homeworks.AssignHomeworkReq, proto.homeworks.Homework>newBuilder()
+              io.grpc.MethodDescriptor.<com.umutozd.proto.homeworks.AssignHomeworkReq, com.umutozd.proto.homeworks.Homework>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "AssignHomework"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  proto.homeworks.AssignHomeworkReq.getDefaultInstance()))
+                  com.umutozd.proto.homeworks.AssignHomeworkReq.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  proto.homeworks.Homework.getDefaultInstance()))
+                  com.umutozd.proto.homeworks.Homework.getDefaultInstance()))
               .build();
         }
       }
@@ -45,29 +45,29 @@ public final class HomeworkServiceGrpc {
     return getAssignHomeworkMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<proto.homeworks.DoHomeworkReq,
-      proto.homeworks.Homework> getDoHomeworkMethod;
+  private static volatile io.grpc.MethodDescriptor<com.umutozd.proto.homeworks.DoHomeworkReq,
+      com.umutozd.proto.homeworks.Homework> getDoHomeworkMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "DoHomework",
-      requestType = proto.homeworks.DoHomeworkReq.class,
-      responseType = proto.homeworks.Homework.class,
+      requestType = com.umutozd.proto.homeworks.DoHomeworkReq.class,
+      responseType = com.umutozd.proto.homeworks.Homework.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<proto.homeworks.DoHomeworkReq,
-      proto.homeworks.Homework> getDoHomeworkMethod() {
-    io.grpc.MethodDescriptor<proto.homeworks.DoHomeworkReq, proto.homeworks.Homework> getDoHomeworkMethod;
+  public static io.grpc.MethodDescriptor<com.umutozd.proto.homeworks.DoHomeworkReq,
+      com.umutozd.proto.homeworks.Homework> getDoHomeworkMethod() {
+    io.grpc.MethodDescriptor<com.umutozd.proto.homeworks.DoHomeworkReq, com.umutozd.proto.homeworks.Homework> getDoHomeworkMethod;
     if ((getDoHomeworkMethod = HomeworkServiceGrpc.getDoHomeworkMethod) == null) {
       synchronized (HomeworkServiceGrpc.class) {
         if ((getDoHomeworkMethod = HomeworkServiceGrpc.getDoHomeworkMethod) == null) {
           HomeworkServiceGrpc.getDoHomeworkMethod = getDoHomeworkMethod =
-              io.grpc.MethodDescriptor.<proto.homeworks.DoHomeworkReq, proto.homeworks.Homework>newBuilder()
+              io.grpc.MethodDescriptor.<com.umutozd.proto.homeworks.DoHomeworkReq, com.umutozd.proto.homeworks.Homework>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "DoHomework"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  proto.homeworks.DoHomeworkReq.getDefaultInstance()))
+                  com.umutozd.proto.homeworks.DoHomeworkReq.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(
-                  proto.homeworks.Homework.getDefaultInstance()))
+                  com.umutozd.proto.homeworks.Homework.getDefaultInstance()))
               .build();
         }
       }
@@ -125,15 +125,15 @@ public final class HomeworkServiceGrpc {
 
     /**
      */
-    public void assignHomework(proto.homeworks.AssignHomeworkReq request,
-        io.grpc.stub.StreamObserver<proto.homeworks.Homework> responseObserver) {
+    public void assignHomework(com.umutozd.proto.homeworks.AssignHomeworkReq request,
+        io.grpc.stub.StreamObserver<com.umutozd.proto.homeworks.Homework> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getAssignHomeworkMethod(), responseObserver);
     }
 
     /**
      */
-    public void doHomework(proto.homeworks.DoHomeworkReq request,
-        io.grpc.stub.StreamObserver<proto.homeworks.Homework> responseObserver) {
+    public void doHomework(com.umutozd.proto.homeworks.DoHomeworkReq request,
+        io.grpc.stub.StreamObserver<com.umutozd.proto.homeworks.Homework> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDoHomeworkMethod(), responseObserver);
     }
 
@@ -143,15 +143,15 @@ public final class HomeworkServiceGrpc {
             getAssignHomeworkMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                proto.homeworks.AssignHomeworkReq,
-                proto.homeworks.Homework>(
+                com.umutozd.proto.homeworks.AssignHomeworkReq,
+                com.umutozd.proto.homeworks.Homework>(
                   this, METHODID_ASSIGN_HOMEWORK)))
           .addMethod(
             getDoHomeworkMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                proto.homeworks.DoHomeworkReq,
-                proto.homeworks.Homework>(
+                com.umutozd.proto.homeworks.DoHomeworkReq,
+                com.umutozd.proto.homeworks.Homework>(
                   this, METHODID_DO_HOMEWORK)))
           .build();
     }
@@ -173,16 +173,16 @@ public final class HomeworkServiceGrpc {
 
     /**
      */
-    public void assignHomework(proto.homeworks.AssignHomeworkReq request,
-        io.grpc.stub.StreamObserver<proto.homeworks.Homework> responseObserver) {
+    public void assignHomework(com.umutozd.proto.homeworks.AssignHomeworkReq request,
+        io.grpc.stub.StreamObserver<com.umutozd.proto.homeworks.Homework> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getAssignHomeworkMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void doHomework(proto.homeworks.DoHomeworkReq request,
-        io.grpc.stub.StreamObserver<proto.homeworks.Homework> responseObserver) {
+    public void doHomework(com.umutozd.proto.homeworks.DoHomeworkReq request,
+        io.grpc.stub.StreamObserver<com.umutozd.proto.homeworks.Homework> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getDoHomeworkMethod(), getCallOptions()), request, responseObserver);
     }
@@ -204,14 +204,14 @@ public final class HomeworkServiceGrpc {
 
     /**
      */
-    public proto.homeworks.Homework assignHomework(proto.homeworks.AssignHomeworkReq request) {
+    public com.umutozd.proto.homeworks.Homework assignHomework(com.umutozd.proto.homeworks.AssignHomeworkReq request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getAssignHomeworkMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public proto.homeworks.Homework doHomework(proto.homeworks.DoHomeworkReq request) {
+    public com.umutozd.proto.homeworks.Homework doHomework(com.umutozd.proto.homeworks.DoHomeworkReq request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getDoHomeworkMethod(), getCallOptions(), request);
     }
@@ -233,16 +233,16 @@ public final class HomeworkServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<proto.homeworks.Homework> assignHomework(
-        proto.homeworks.AssignHomeworkReq request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.umutozd.proto.homeworks.Homework> assignHomework(
+        com.umutozd.proto.homeworks.AssignHomeworkReq request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getAssignHomeworkMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<proto.homeworks.Homework> doHomework(
-        proto.homeworks.DoHomeworkReq request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.umutozd.proto.homeworks.Homework> doHomework(
+        com.umutozd.proto.homeworks.DoHomeworkReq request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getDoHomeworkMethod(), getCallOptions()), request);
     }
@@ -269,12 +269,12 @@ public final class HomeworkServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_ASSIGN_HOMEWORK:
-          serviceImpl.assignHomework((proto.homeworks.AssignHomeworkReq) request,
-              (io.grpc.stub.StreamObserver<proto.homeworks.Homework>) responseObserver);
+          serviceImpl.assignHomework((com.umutozd.proto.homeworks.AssignHomeworkReq) request,
+              (io.grpc.stub.StreamObserver<com.umutozd.proto.homeworks.Homework>) responseObserver);
           break;
         case METHODID_DO_HOMEWORK:
-          serviceImpl.doHomework((proto.homeworks.DoHomeworkReq) request,
-              (io.grpc.stub.StreamObserver<proto.homeworks.Homework>) responseObserver);
+          serviceImpl.doHomework((com.umutozd.proto.homeworks.DoHomeworkReq) request,
+              (io.grpc.stub.StreamObserver<com.umutozd.proto.homeworks.Homework>) responseObserver);
           break;
         default:
           throw new AssertionError();

@@ -2,7 +2,7 @@ syntax = "proto3";
 package homeworks;
 
 option java_multiple_files = true;
-option java_package = "proto.homeworks";
+option java_package = "com.umutozd.proto.homeworks";
 option java_outer_classname = "HomeworkProto";
 
 import "user.proto";
