@@ -4,15 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02449deb-cad0-4bbe-97da-5176b8ac11be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/protoeditor.xml" afterDir="false" />
+    <list default="true" id="02449deb-cad0-4bbe-97da-5176b8ac11be" name="Changes" comment="add initial proto scripts and output">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/proto.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/proto.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/Answer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/AnswerOrBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/AssignHomeworkReq.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/AssignHomeworkReqOrBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/CreateUserReq.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/CreateUserReqOrBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/DoHomeworkReq.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/DoHomeworkReqOrBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/GetUserReq.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/GetUserReqOrBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/Homework.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/HomeworkOrBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/HomeworkProto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/HomeworkServiceGrpc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/Question.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/QuestionOrBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/UserAndHomework.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/UserAndHomeworkOrBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/UserOrBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/UserProto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/UsersServiceGrpc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/proto/homeworks/homework.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/homeworks/homework.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/proto/homeworks/user.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/homeworks/user.proto" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666940695660</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add initial proto scripts and output">
+      <created>1667335847104</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667335847104</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,6 +124,7 @@
     <MESSAGE value="scripts: add proto.sh" />
     <MESSAGE value="proto/homeworks: add compiled homeworks protobuf" />
     <MESSAGE value=".idea: add protoeditor.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value=".idea: add protoeditor.xml" />
+    <MESSAGE value="add initial proto scripts and output" />
+    <option name="LAST_COMMIT_MESSAGE" value="add initial proto scripts and output" />
   </component>
 </project>
