@@ -4,33 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02449deb-cad0-4bbe-97da-5176b8ac11be" name="Changes" comment="add initial proto scripts and output">
+    <list default="true" id="02449deb-cad0-4bbe-97da-5176b8ac11be" name="Changes" comment="update compiled protobuf files&#10;- move all code under com.umutozd pacakge and update java packages accordingly">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/Answer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/AnswerOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/AssignHomeworkReq.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/AssignHomeworkReqOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/CreateUserReq.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/CreateUserReqOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/DoHomeworkReq.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/DoHomeworkReqOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/GetUserReq.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/GetUserReqOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/Homework.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/HomeworkOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/HomeworkProto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/HomeworkServiceGrpc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/Question.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/QuestionOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/UserAndHomework.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/UserAndHomeworkOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/UserOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/UserProto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/homeworks/UsersServiceGrpc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/proto/homeworks/homework.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/homeworks/homework.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/proto/homeworks/user.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/homeworks/user.proto" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +51,26 @@
       <recent name="$PROJECT_DIR$/src/main/proto/homeworks" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.umutozd.Main" />
+      <module name="java-grpc-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.umutozd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -105,7 +101,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667335847104</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add dependencies of spring boot, protobuf and grpc stub">
+      <created>1667338015040</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667338015040</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update compiled protobuf files&#10;- move all code under com.umutozd pacakge and update java packages accordingly">
+      <created>1667338075303</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667338075303</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,6 +135,8 @@
     <MESSAGE value="proto/homeworks: add compiled homeworks protobuf" />
     <MESSAGE value=".idea: add protoeditor.xml" />
     <MESSAGE value="add initial proto scripts and output" />
-    <option name="LAST_COMMIT_MESSAGE" value="add initial proto scripts and output" />
+    <MESSAGE value="add dependencies of spring boot, protobuf and grpc stub" />
+    <MESSAGE value="update compiled protobuf files&#10;- move all code under com.umutozd pacakge and update java packages accordingly" />
+    <option name="LAST_COMMIT_MESSAGE" value="update compiled protobuf files&#10;- move all code under com.umutozd pacakge and update java packages accordingly" />
   </component>
 </project>
